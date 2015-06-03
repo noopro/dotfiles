@@ -29,11 +29,10 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'alexpearce/vim-hybrid'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'ehamberg/vim-cute-python'
 Plugin 'gee-forr/vitality.vim'
 Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'jonathanfilip/vim-lucius'
 Plugin 'JulesWang/css.vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'kien/ctrlp.vim'
@@ -41,16 +40,13 @@ Plugin 'msanders/snipmate.vim'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'othree/html5.vim'
 Plugin 'raichoo/haskell-vim'
-Plugin 'Raimondi/delimitMate'
 Plugin 'rking/ag.vim'
-Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-repeat'
 Plugin 'vim-scripts/matchit.zip'
-Plugin 'vim-scripts/pyte'
 Plugin 'vim-scripts/cern_root.vim'
 Plugin 'vim-scripts/TeX-PDF'
 
@@ -74,13 +70,11 @@ set showcmd
 set noshowmode
 
 " Theme
-colorscheme pyte
+colorscheme lucius
 
 
-" Show relative line number as absolute line number at the cursor position,
-" but relative line number above and below the cursor
+" Show line numbers
 set number
-set relativenumber
 
 " Have some context around the current line always on screen
 set scrolloff=3
