@@ -50,6 +50,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-repeat'
 Plugin 'vim-scripts/matchit.zip'
+Plugin 'vim-scripts/pyte'
 Plugin 'vim-scripts/cern_root.vim'
 Plugin 'vim-scripts/TeX-PDF'
 
@@ -73,8 +74,7 @@ set showcmd
 set noshowmode
 
 " Theme
-let g:hybrid_use_Xresources = 1
-colorscheme hybrid
+colorscheme pyte
 
 
 " Show relative line number as absolute line number at the cursor position,
@@ -167,9 +167,6 @@ map <leader>w :w<CR>
 map <leader>x :x<CR>
 map <leader>q :q<CR>
 
-" Fold/unfold with <space>
-nnoremap <space> za
-
 " Search with ag.vim
 nnoremap <leader>a :Ag
 
@@ -199,8 +196,7 @@ if has("autocmd")
   au FileType make set noexpandtab
 
   " Python style uses 4 spaces as tabs
-  " Coloured column at 80 characters, good for wide terminals
-  au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 colorcolumn=80
+  au FileType python set softtabstop=4 tabstop=4 shiftwidth=4
 
   " Spellchecking in LaTeX and Markdown
   au FileType tex,markdown set spelllang=en_gb spell

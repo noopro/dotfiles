@@ -69,10 +69,3 @@ zstyle ':prezto:module:prompt' theme 'alxprc'
 #   'builtin' 'bg=blue' \
 #   'command' 'bg=blue' \
 #   'function' 'bg=blue'
-
-#
-# Tmux
-#
-
-# Auto start a session when Zsh is launched in a local terminal.
-zstyle ':prezto:module:tmux:auto-start' local 'yes'

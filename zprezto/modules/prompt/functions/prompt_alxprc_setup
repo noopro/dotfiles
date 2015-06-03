@@ -46,7 +46,7 @@ function prompt_alxprc_setup {
 
   # Define prompts
   PROMPT='
-${SSH_TTY:+"%F{red}%n%f@%F{magenta}%m%f "}%F{blue}%~%f ${git_info[prompt]}
+%F{red}%n%f@%F{magenta}%m%f %F{blue}%~%f ${git_info[prompt]}
 %B>%b '
   RPROMPT='${python_info[virtualenv]}'
   SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
