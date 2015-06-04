@@ -96,10 +96,8 @@ set smartcase
 " Allow a greater number of tabs to be opened (default: 10)
 set tabpagemax=20
 
-" Enable folding, but don't pre-fold things when opening a file
-set foldenable
-set foldlevelstart=10
-set foldmethod=indent
+" Disable folding
+set nofoldenable
 
 """"""""""""""""""""""""""""""""""""""""
 " Coding style
@@ -194,10 +192,6 @@ if has("autocmd")
 
   " Spellchecking in LaTeX and Markdown
   au FileType tex,markdown set spelllang=en_gb spell
-
-  " Wrap Python, LaTeX, and Markdown automatically at 80 characters, allowing
-  " sentences to start on new lines
-  au FileType python,tex,markdown set formatoptions+=atw textwidth=79
 
   " I often type `#` to start a comment, as alt-3, then hit space
   " alt-space is a UTF non-breaking space character, which can give encoding errors
