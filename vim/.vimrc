@@ -25,33 +25,11 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 " vim-plug does `filetype plugin indent on` for us
 call plug#begin('~/.vim/bundle')
 
-Plug 'airblade/vim-gitgutter'
-" Use with gruvbox iTerm2 colourscheme from
-" https://github.com/flipxfx/gruvbox-terminal
-Plug 'alexpearce/gruvbox'
-Plug 'anntzer/vim-cython'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'davidhalter/jedi-vim'
-Plug 'ehamberg/vim-cute-python'
-Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'ibab/vim-snakemake'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'justinmk/vim-sneak'
-Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/vim-easy-align'
-Plug 'ledger/vim-ledger'
-Plug 'lervag/vimtex'
-Plug 'nathangrigg/vim-beancount'
+Plug 'vim-scripts/pyte'
 Plug 'sheerun/vim-polyglot'
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-scripts/UniCycle'
-Plug 'w0rp/ale'
 
 call plug#end()
 
@@ -102,9 +80,8 @@ set noshowmode
 
 " Theme
 set termguicolors
-set background=dark
-let g:gruvbox_italic=1
-colorscheme gruvbox
+set background=light
+colorscheme pyte
 
 " Have some context around the current line always on screen
 set scrolloff=3
