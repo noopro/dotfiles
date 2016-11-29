@@ -2,6 +2,10 @@
 " General configuration
 """"""""""""""""""""""""""""""""""""""""
 
+if has("nvim")
+  set nocompatible
+end
+
 " Vim is not compatible with fish
 set shell=/bin/sh
 
@@ -79,7 +83,9 @@ set showcmd
 set noshowmode
 
 " Theme
-set termguicolors
+if has("nvim")
+  set termguicolors
+endif
 set background=light
 colorscheme pyte
 
